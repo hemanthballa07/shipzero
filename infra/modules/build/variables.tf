@@ -1,4 +1,5 @@
-# Edge module — CloudFront, Route53, ACM, S3-sites
+# Build module — CodeBuild, Step Functions, S3-artifacts, SSM
+# Activated in Phase 9–10.
 
 variable "environment" {
   description = "Environment name"
@@ -7,10 +8,5 @@ variable "environment" {
 
 variable "project" {
   description = "Project name"
-  type        = string
-}
-
-variable "domain_name" {
-  description = "Root domain (e.g. shipzero.space)"
   type        = string
 }
