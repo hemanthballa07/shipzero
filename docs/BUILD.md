@@ -28,17 +28,17 @@ The control plane fires a `BuildRequested` EventBridge event with this payload:
 
 Passed at `StartBuild` time by Step Functions:
 
-| Variable | Source | Example |
-|---|---|---|
-| `PROJECT_ID` | Event detail | `proj_abc123` |
-| `DEPLOY_ID` | Event detail | `deploy_xyz789` |
-| `REPO_URL` | Event detail | `https://github.com/user/repo` |
-| `BRANCH`        | Event detail | `main` |
-| `COMMIT_SHA`    | Event detail | `a1b2c3d4...` |
-| `BUILD_COMMAND` | Event detail (default: `npm run build`) | `npm run build` |
-| `OUTPUT_DIR`       | Event detail (default: `dist`) | `dist` |
-| `ARTIFACTS_BUCKET` | Terraform output | `shipzero-artifacts-dev` |
-| `SITES_BUCKET` | Terraform output | `shipzero-sites-dev` |
+| Variable          | Source                                  | Example |
+|-------------------|-----------------------------------------|-------------------|
+| `PROJECT_ID`      | Event detail                            | `proj_abc123` |
+| `DEPLOY_ID`       | Event detail                            | `deploy_xyz789` |
+| `REPO_URL`        | Event detail                            | `https://github.com/user/repo` |
+| `BRANCH`          | Event detail                            | `main` |
+| `COMMIT_SHA`      | Event detail                            | `a1b2c3d4...` |
+| `BUILD_COMMAND`   | Event detail (default: `npm run build`) | `npm run build` |
+| `OUTPUT_DIR`      | Event detail (default: `dist`)          | `dist` |
+| `ARTIFACTS_BUCKET`| Terraform output                        | `shipzero-artifacts-dev` |
+| `SITES_BUCKET`    | Terraform output                        | `shipzero-sites-dev` |
 
 ## Buildspec Phases
 
